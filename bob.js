@@ -5,7 +5,7 @@ class Bob {
         this.body = Bodies.circle(x, y, this.radius, {isStatic: false, restitution: 0.3, friction: 0.5, density: 1.2});
         World.add(world, this.body);
         this.launch = function() {
-            Matter.Body.applyForce(this.body, this.body.position, {x: 0, y: -300});
+            Matter.Body.applyForce(this.body, this.body.position, {x: 200, y: -300});
         }
         this.display = function () {
             push();
